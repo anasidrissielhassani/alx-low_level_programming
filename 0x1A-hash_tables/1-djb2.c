@@ -1,12 +1,12 @@
 #include "hash_tables.h"
 
 /**
- * hash_djb2 - function that generates a random number through
- * a string given (hash number)
+ * hash_djb2 - function to compute hash of 'str' using djb2
+ * @str: string to hash
  *
- * @str: string
- * Return: hash number
+ * Return: value of 64 bits hash
  */
+
 unsigned long int hash_djb2(const unsigned char *str)
 {
 	unsigned long int hash;
@@ -19,3 +19,4 @@ unsigned long int hash_djb2(const unsigned char *str)
 	}
 	return (hash);
 }
+
